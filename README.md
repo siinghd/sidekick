@@ -281,7 +281,7 @@ max_age_hours = 24.0
 
 ```bash
 # Clone and install
-git clone https://github.com/yourusername/sidekick
+git clone https://github.com/siinghd/sidekick
 cd sidekick
 uv sync --dev
 
