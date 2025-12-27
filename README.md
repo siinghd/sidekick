@@ -59,6 +59,18 @@ pip install sidekick[train]
 pip install sidekick[all]
 ```
 
+### Setup Backends
+
+After installation, set up the inference/training backend for your hardware:
+
+```bash
+sidekick setup              # Auto-detect and install
+sidekick setup mlx          # Apple Silicon (recommended for Mac)
+sidekick setup llama        # Install llama-cpp-python
+sidekick setup ollama       # Get Ollama setup instructions
+sidekick setup --cpu-only   # CPU-only (no GPU acceleration)
+```
+
 ## Quick Start
 
 ```bash
@@ -81,6 +93,18 @@ sidekick serve
 ```
 
 ## Commands
+
+### `sidekick setup`
+
+Install backends for your hardware.
+
+```bash
+sidekick setup              # Auto-detect and install best backend
+sidekick setup mlx          # Install MLX (Apple Silicon only)
+sidekick setup llama        # Install llama-cpp-python
+sidekick setup ollama       # Ollama setup instructions
+sidekick setup --cpu-only   # Install without GPU acceleration
+```
 
 ### `sidekick init`
 
